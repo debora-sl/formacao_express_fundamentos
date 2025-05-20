@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação Express - Fundamentos</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Receita/ Despesa</h1>
+    </header>
+    
+    <div>
+        <form action="">
+
+            <div>
+                <label for="descricao"><b> Descrição</b></label> <br>
+                <input type="text" name="descricao" id="descricao">
+            </div>
+
+            <div>
+                <label for="observacao"><b> Observação</b> </label> <br>
+                <input type="text" name="observacao" id="observacao">
+            </div>
+
+            <div>
+                <label for="tipo"><b>Tipo</b></label>
+                    <p>Receita</p>
+                    <input type="radio" name="tipo" id="tipo">
+  
+                    <p>Despesa</p>
+                    <input type="radio" name="tipo" id="tipo">
+
+            </div>
+
+            <div>
+                <label for="valor"><b>Valor</b></label> <br>
+                <input type="number" name="valor" id="valor">
+            </div>
+
+            <div>
+                <label for="consolidado"><b>Consolidado?</b></label> <br>
+                <input type="checkbox" name="consolidado" id="consolidado">
+            </div>
+
+            <div>
+                <label for="conta"><b> Conta Associada </b></label> <br>
+                <select name="conta" id="conta">
+                    <option value="nenhuma">Nenhuma</option>
+                    <option value="contaCorrenteBB">Conta Corrente BB</option>
+                    <option value="contaCorrenteNuBank">Conta Corrente Nubank</option>
+                    <option value="contaItauEmpresa">Conta Itaú Empresa</option>
+                </select>
+            </div> <br>
+
+            <div>
+                <button>Salvar</button>
+                <button>Cancelar</button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>
