@@ -16,37 +16,38 @@
             <div>
                 <label for="descricao"><b> Descrição</b></label> <br>
                 <input type="text" name="descricao" id="descricao">
-            </div>
+            </div> <br>
 
             <div>
                 <label for="observacao"><b> Observação</b> </label> <br>
-                <input type="text" name="observacao" id="observacao">
-            </div>
+                <textarea name="observacao" id="observacao"></textarea>
+            </div> <br>
 
             <div>
-                <label for="tipo"><b>Tipo</b></label>
-                    <p>Receita</p>
-                    <input type="radio" name="tipo" id="tipo">
-  
-                    <p>Despesa</p>
-                    <input type="radio" name="tipo" id="tipo">
-
-            </div>
+                <span><b>Tipo</b></span>
+                <div>
+                    <input type="radio" name="receita" id="receita">
+                    <label for="receita">Receita</label>
+    
+                    <input type="radio" name="receita" id="receita">
+                    <label for="receita">Despesa</label>
+                </div>
+            </div> <br>
 
             <div>
                 <label for="valor"><b>Valor</b></label> <br>
                 <input type="number" name="valor" id="valor">
-            </div>
+            </div> <br>
 
             <div>
                 <label for="consolidado"><b>Consolidado?</b></label> <br>
                 <input type="checkbox" name="consolidado" id="consolidado">
-            </div>
+            </div> <br>
 
             <div>
                 <label for="conta"><b> Conta Associada </b></label> <br>
                 <select name="conta" id="conta">
-                    <option value="nenhuma">Nenhuma</option>
+                    <option value="">Nenhuma</option>
                     <option value="contaCorrenteBB">Conta Corrente BB</option>
                     <option value="contaCorrenteNuBank">Conta Corrente Nubank</option>
                     <option value="contaItauEmpresa">Conta Itaú Empresa</option>
@@ -57,8 +58,6 @@
                 <button>Salvar</button>
                 <button>Cancelar</button>
             </div>
-
-
         </form>
     </div>
 </body>
